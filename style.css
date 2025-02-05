@@ -196,7 +196,7 @@ html::-webkit-scrollbar-thumb {
   border-radius: 0.8rem;
 }
 
-/*top 10 book section*/
+/*TOP 10 BOOK SECTION*/
 .top-seller {
   display: block;
 }
@@ -229,13 +229,13 @@ html::-webkit-scrollbar-thumb {
 
 .book-cover {
   width: 100%;
-  z-index: 1;
+  z-index: 2;
+  position: relative; /*without this, the book cover will go behind the circle*/
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
 .circle {
-  /*not going behind the book*/
   position: absolute;
   width: 10rem;
   height: 10rem;
@@ -256,6 +256,7 @@ html::-webkit-scrollbar-thumb {
   color: #2c1106;
   width: 8rem;
   margin-left: 0.3rem;
+  font-size: 1.1rem;
 }
 
 .book-author {
@@ -288,7 +289,6 @@ html::-webkit-scrollbar-thumb {
 }
 
 .cart-btn {
-  /*not align with the book infos*/
   background-color: #c0d8ce;
   width: 2.5rem;
   height: 2.5rem;
@@ -299,14 +299,13 @@ html::-webkit-scrollbar-thumb {
 }
 
 .cart-icon {
-  /*why is it not turning green and it's not centralised*/
   margin-top: 0.55rem;
   margin-right: 0.1rem;
   color: #315446;
   z-index: 1;
 }
 
-/*genre section*/
+/*GENRE SECTIOn*/
 .genre-heading {
   display: flex;
   justify-content: center;
