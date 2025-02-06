@@ -305,7 +305,7 @@ html::-webkit-scrollbar-thumb {
   z-index: 1;
 }
 
-/*GENRE SECTIOn*/
+/*GENRE SECTION*/
 .genre-heading {
   display: flex;
   justify-content: center;
@@ -317,18 +317,15 @@ html::-webkit-scrollbar-thumb {
 
 .genres-container {
   display: flex;
-  text-align: center;
-  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   width: 85%;
   max-width: 1200px;
   margin: auto;
   padding: 4rem;
-  height: auto;
+  padding-bottom: 6rem;
   border-radius: 0.6rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  justify-content: flex-start;
   overflow: hidden;
 }
 
@@ -336,15 +333,15 @@ html::-webkit-scrollbar-thumb {
   display: grid;
   width: 100%;
   /* height: 40rem; */
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr); /*4 columns */
+  /*auto-fit, minmax(150px, 1fr)*/
+  gap: 3rem 2rem;
   justify-items: center;
-  align-items: center;
+  align-items: start;
 }
 
-.genres-content {
+/* .genres-content {
   width: 100%;
-  /* height: 30rem; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2rem;
@@ -352,13 +349,15 @@ html::-webkit-scrollbar-thumb {
   align-items: center;
   margin: 0;
   padding: 0;
-}
+} */
 
 .genres-category {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
+  justify-content: center;
+  min-height: 12rem;
 }
 
 .genres-category .circle {
@@ -366,68 +365,33 @@ html::-webkit-scrollbar-thumb {
   height: 9rem;
   border-radius: 50%;
   background-color: #faece3;
-  margin-bottom: 10px;
+  margin-bottom: 0rem;
+  display: flex; /*use flexbox to centralise the circle*/
+  padding: 1rem;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
 }
 
-.genres-category .circle img {
+.genre-icon {
   /*not centralised in the circle*/
   width: 65%;
-  height: 65;
+  height: auto;
   object-fit: contain;
-  margin-left: 1.8rem;
-  margin-top: 1.5rem;
 }
-
-/*adjust image placement*/
-.genres-category .circle .romance-img {
-  margin-right: 0.5rem;
-  margin-top: 2rem;
-}
-
-.genres-category .circle .mystery-img {
-  margin-left: 0.5rem;
-  margin-top: 2rem;
-}
-
-.genres-category .circle .thriller-img {
-  margin-left: -0.5rem;
-  margin-top: 1.8rem;
-}
-
-.genres-category .circle .horror-img {
-  margin-left: 0.5rem;
-  margin-top: 1.6rem;
-}
-
-.genres-category .circle .comedy-img {
-  margin-left: 0.5rem;
-  margin-top: 2rem;
-}
-
-.genres-category .circle .sci-fi-img {
-  margin-left: 1.3rem;
-  margin-top: 1.8rem;
-}
-
-.genres-category .circle .children-img {
-  margin-left: 1.3rem;
-  margin-top: 1.8rem;
-}
-
-.genres-category .circle .psychology-img {
-  margin-left: 0.3rem;
-  margin-top: 1.4rem;
-} /*end of adjusting*/
 
 .genres-category p {
   color: #2c1106;
-  margin-top: 10rem;
+  margin-top: 13rem;
 }
 
 .genres-btn {
-  position: relative;
+  display: flex;
+  justify-content: center;
+
+  /* position: relative; */
   /* bottom: 2rem; */
-  margin-left: 0.4rem;
+  margin-top: -4.8rem;
 }
 
 .browse-btn {
