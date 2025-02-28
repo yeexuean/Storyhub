@@ -48,39 +48,28 @@
 
   <!--shopping cart page-->
   <div class="cart-progress">
-
     <!--progress status-->
     <div class="number-container">
-      <div class="progress-now">
-        <span class="progress-number">1</span>
+      <div class="progress">
+        <button class="progress-current">1</button>
+        <p>Shopping Cart</p>
       </div>
-      <p class="circle-text">
-        Shopping Cart
-      </p>
-    </div>
 
-    <div class="delemeter"></div>
+      <div class="delemeter"></div>
 
-    <div class="number-container">
-      <div class="progress-later">
-        <span class="progress-number">2</span>
+      <div class="progress">
+        <button class="progress-current">2</button>
+        <p>Details</p>
       </div>
-      <p class="circle-text">
-        Details
-      </p>
-    </div>
 
-    <div class="delemeter"></div>
+      <div class="delemeter"></div>
 
-    <div class="number-container">
-      <div class="progress-later">
-        <span class="progress-number">3</span>
+      <div class="progress">
+        <button class="progress-current">3</button>
+        <p>Payment Details</p>
       </div>
-      <p class="circle-text">
-        Payment Details
-      </p>
     </div>
-  </div>  
+  </div>
 
   <!--payment section-->
   <h2 class="payment-details-heading">PAYMENT DETAILS</h2>
@@ -95,6 +84,7 @@
       <img src="icon/payment-method/paypal.svg" class="card-box">
       <img src="icon/payment-method/unionpay.svg" class="card-box">
     </div>
+
 
     <div class="card-details-container">
       <div class="card-details">
@@ -148,7 +138,7 @@
               </div>
           </div>
         </div>
-        <a href="index.html" class="continue-shopping">
+        <a href="checking-out.html" class="continue-shopping">
           <img src="icon/left-icon.svg">
           Continue Shopping
         </a>
@@ -164,24 +154,22 @@
             <p>The Housemaid</p>
           </div>
           
-          <p class="view-more">
-            <span>View more</span> 
-            <!-- <span><img src="icon/dropdown.svg" alt="dropdown-icon" class="view-more-icon"></span> -->
-          </p>
+          <div class="view-more">
+            <p>View more</p> 
+            <img src="icon/dropdown.svg" alt="dropdown-icon" class="view-more-icon">
+          </div>
 
           <div class="cost-container">
               <div class="cost-row">
-                  <p>Subtotal</p>
+                  <p class="cost-row-p">Subtotal</p>
                   <p>£17.70</p>
               </div>
               <div class="cost-row">
-                  <p>Shipping</p>
+                  <p class="cost-row-p">Shipping</p>
                   <p>£5.00</p>
               </div>
           </div>
       
-          <div class="payment-summary-delemeter"></div>
-
           <div class="total-cost-row">
               <p>Total</p>
               <p>£22.70</p>
@@ -194,5 +182,7 @@
           </a>
       </div>  
     </div>
+    <script src="script.js"></script>
+
   </body>
   </html>
