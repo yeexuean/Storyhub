@@ -87,13 +87,21 @@ html::-webkit-scrollbar-thumb {
 
 .header .header-1 li {
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
 }
 
 .header .header-1 li a {
   color: white;
   text-decoration: none;
   font-size: 1rem;
+  font-weight: 500;
   padding: 0.5rem;
+}
+
+.header .header-1 li a:hover {
+  opacity: 75%;
 }
 
 .header .header-1 .logo {
@@ -173,6 +181,13 @@ html::-webkit-scrollbar-thumb {
   border-radius: 0.9rem;
   cursor: pointer;
   width: 15rem;
+  transform: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.buy-btn:hover {
+  background-color: #183f2f;
 }
 
 /*harrypotter column*/
@@ -405,7 +420,6 @@ html::-webkit-scrollbar-thumb {
 
 .pink-bg {
   /* position: absolute; */
-  width: 100%;
   height: 100%;
   font-size: 4rem;
   padding: 12rem 10rem;
@@ -429,23 +443,12 @@ html::-webkit-scrollbar-thumb {
 }
 
 /*A story for every world*/
-/* .story-text {
-  justify-content: center;
-  text-align: center;
-  font-size: 4rem;
-  padding: 20rem 10rem;
-  background-color: #F4B1A4;
-  color: #315446;
-  margin: auto
-  z-index: -1;
-} */
 
 .story-text {
-  font-size: 5vw;
+  font-size: 4vw;
+  font-weight: 800;
   text-align: center;
   padding: 20rem 0;
-  /* white-space: nowrap; */
-  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -455,6 +458,10 @@ html::-webkit-scrollbar-thumb {
 }
 
 /*monthly top authors*/
+.top-authors {
+  margin: 10rem 0;
+}
+
 .top-authors-heading {
   margin: 5rem;
   font-size: 3rem;
@@ -502,9 +509,9 @@ html::-webkit-scrollbar-thumb {
 }
 
 .reviews-heading {
-  margin: 6rem;
   font-size: 3rem;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .review-container {
@@ -512,15 +519,16 @@ html::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
   position: relative;
-  gap: 2.5rem;
+  gap: 4rem;
   max-width: 1230px;
   width: 100%;
-  margin: 0 5rem 5rem 5rem;
+  margin: 5rem auto;
+  margin-bottom: 10rem;
 }
 
 .review-card {
-  flex: 0 0 auto;
-  width: 17rem;
+  /* flex: 0 0 auto; */
+  width: 20rem;
   height: 19rem;
   padding: 20px;
   border: none;
@@ -530,7 +538,7 @@ html::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .client-profile {
@@ -547,46 +555,27 @@ html::-webkit-scrollbar-thumb {
   width: 4.5rem;
 }
 
+.reviewer-name {
+  white-space: nowrap;
+}
+
 .review-text {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  line-height: 1.4rem;
+  line-height: 2rem;
   margin-bottom: 1rem;
   color: #2c1106;
-  font-size: 200;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 
 .client-stars-rating {
-  text-align: center;
-  align-self: center;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
   margin-top: auto;
 }
-
-/* .left-click {
-  width: 35px;
-  height: 35px;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  background-color: white;
-  margin-left: 4rem; 
-  cursor: pointer;
-  flex-shrink: 0;
-} */
-/* 
-.right-click {
-  width: 35px;
-  height: 35px;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  background-color: white;
-  margin-left: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  flex-shrink: 0;
-} */
 
 .left-click,
 .right-click {
@@ -607,11 +596,12 @@ html::-webkit-scrollbar-thumb {
 }
 
 .left-click {
-  left: -1rem;
+  left: -6rem;
 }
 
 .right-click {
-  left: -1rem;
+  right: -6rem;
+  left: auto;
 }
 .left-click:hover,
 .right-click:hover {
@@ -622,12 +612,10 @@ html::-webkit-scrollbar-thumb {
 .advantage-container {
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   gap: 2rem;
   padding: 2rem;
-  margin-bottom: 5rem;
-  width: 100%;
-  max-width: 1300px;
+  margin-bottom: 8rem;
   margin-left: 5rem;
   margin-right: 5rem;
 }
@@ -721,7 +709,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .email-btn {
-  /* position: relative; */
+  position: relative;
   background-color: white;
   color: #c9c9c9;
   border: none;
@@ -731,10 +719,12 @@ html::-webkit-scrollbar-thumb {
   width: 18rem;
   padding: 0.9rem 1.5rem;
   text-align: left;
-  /* z-index: 1; */
+  z-index: 1;
+  left: 5rem;
 }
 
 .subscribe-btn {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -744,16 +734,17 @@ html::-webkit-scrollbar-thumb {
   border-radius: 8rem;
   font-size: 0.8rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 1rem 2rem;
-  /* margin-right: 5rem ; */
+  padding: 0.9rem 2rem;
+  margin-right: 5rem ;
   cursor: pointer;
-  /* z-index: 2; */
+  z-index: 2;
 }
 
 .subscribe-btn img {
   /* color: white; */
   margin-left: 1rem;
   filter: invert(1);
+  width: 5px;
 }
 
 .subscribe-btn:hover {
@@ -840,23 +831,23 @@ html::-webkit-scrollbar-thumb {
   color: #faece3;
 }
 
-ul {
+.footer-column ul {
   list-style: none;
   padding: 0;
 }
 
-ul li {
+.footer-column ul li {
   margin-bottom: 12px;
 }
 
-ul li a {
+.footer-column ul li a {
   color: white;
   text-decoration: none;
   font-size: 0.9rem;
   opacity: 0.5;
 }
 
-ul li a:hover {
+.footer-column ul li a:hover {
   color: white;
   opacity: 1;
 }
@@ -1956,26 +1947,26 @@ ul li a:hover {
 .sign-in-box {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  width: 50%;
-  height: 40rem;
+  justify-content: center;
+  align-items: center;
   border-radius: 0.6rem;
-  margin: 4rem auto;
-  /* margin-top: 2rem;
-  margin-left: 20rem;
-  margin-bottom: 3rem; */
+  margin: 15rem auto;
+  max-width: 45%;
   padding: 2.5rem;
   background-color: #faece3;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .sign-in-title {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: top;
-  gap: 14.5rem;
+  gap: 24rem;
+  font-size: 0.9rem;
   color: #2c1106;
-  margin-bottom: 2rem;
-  margin-left: 5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #c9c9c9;
 }
 
 .sign-in-title a {
@@ -1989,14 +1980,6 @@ ul li a:hover {
   background-color: #315446;
 }
 
-.sign-in-delemeter {
-  width: 100%;
-  height: 0.1rem;
-  background-color: #2c1106;
-  opacity: 0.3;
-  /* margin-bottom: 2rem; */
-}
-
 .sign-in-details {
   display: flex;
   flex-direction: column;
@@ -2006,46 +1989,52 @@ ul li a:hover {
 .sign-in-details h3 {
   margin-bottom: 1rem;
   color: #2c1106;
+  font-weight: 600;
 }
 
 .username-box input {
   margin-bottom: 3rem;
   width: 100%;
-  height: 3rem;
+  height: 1.8rem;
   padding: 1.5rem;
   border: none;
   border-radius: 0.6rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.password-box {
+  position: relative;
+  width: 100%;
 }
 
 .password-box input {
   margin-bottom: 3rem;
   width: 100%;
   height: 3rem;
-  padding: 1.5rem;
+  padding: 0.5rem;
   border: none;
   border-radius: 0.6rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding-right: 3rem;
+  box-sizing: border-box;
+  color: #c9c9c9;
+  padding-left: 1rem;
 }
 
-.password-box {
-  position: relative;
-  display: flex;
-}
-
-.password-box button {
+.password-show-btn {
   position: absolute;
   background-color: #315446;
   width: 4rem;
   height: 3rem;
   border: none;
   border-radius: 0.6rem;
-  margin-left: 36rem;
   cursor: pointer;
+  right: 0rem;
 }
 
 .password-box button img {
-  width: 1.5rem;
+  width: 1.2rem;
 }
 
 .remember-me {
@@ -2246,8 +2235,8 @@ ul li a:hover {
 /*ADMIN PAGE*/
 /*inventory page*/
 .book-inventory-heading {
-  margin-top: 2rem;
-  margin-left: 8.5rem;
+  margin-top: 10rem;
+  margin-left: 6.8rem;
   width: 85%;
   /* margin: 0 auto; */
   margin-bottom: 2rem;
@@ -2263,10 +2252,6 @@ ul li a:hover {
 }
 
 .inventory-filter-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   gap: 2rem;
   margin-right: 1rem;
 }
@@ -2348,7 +2333,6 @@ table,
 th,
 td {
   padding: 2rem;
-  margin: 2rem auto;
   border-collapse: collapse;
 }
 
@@ -2379,7 +2363,8 @@ main.table {
 }
 
 .table_body {
-  background-color: white;
+  background-color: #faece3;
+  padding: 0.8rem 0;
   border-radius: 0.6rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -2478,11 +2463,26 @@ main.table {
 } */
 
 /*stock form*/
+.stock-form-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
 .stock-form-title h3 {
   color: #2c1106;
   font-size: 1.4rem;
-  margin-left: 8rem;
-  margin-bottom: 2rem;
+}
+
+.stock-form-title img {
+  border: 1px solid #2c1106;
+  border-radius: 50px;
+  padding: 0.8rem;
+  width: 20px;
+  cursor: pointer;
 }
 
 .stock-form-container {
@@ -2492,29 +2492,27 @@ main.table {
   align-items: center;
   background-color: #faece3;
   width: 85%;
-  margin-top: 0;
-  margin: 0 auto;
+  margin: 2rem auto;
+  margin-bottom: 5rem;
   height: 100rem;
   border-radius: 0.6rem;
 }
 
-.add-book-heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-}
 
 .add-book-heading h2 {
+  display: flex;
+  /* justify-content: flex-start; */
   font-size: 1.2rem;
   margin-left: 3rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   color: #2c1106;
 }
 
 .add-book-title {
-  margin-top: -8rem;
-  margin-left: 2rem;
+  /* margin-top: -8rem; */
+  margin-left: 4rem;
+  border-bottom: 2px solid #c9c9c9;
+  width: 92%;
 }
 
 .stock-form-delemeter {
@@ -2526,24 +2524,34 @@ main.table {
 
 .add-book-details {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 10rem;
-  margin-top: 2rem;
+  gap: 5rem;
   width: 100%;
-  /* width: 100%; */
+  margin-top: -4rem;
+}
+
+.stock-content {
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
 .add-image {
   background-color: white;
-  margin-left: 5rem;
-  padding: 2rem;
+  /* margin-left: 5rem; */
+  margin: 0 4rem;
+  padding: 1rem;
   width: 50%;
-  height: 20rem;
+  height: 25rem;
   border: 1px dashed #2c1106;
   border-radius: 0.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
 }
 
 .add-image-details {
@@ -2575,6 +2583,7 @@ main.table {
 .publish-info h4 {
   color: #2c1106;
   margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 .publish-info input {
