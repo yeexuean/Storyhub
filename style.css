@@ -1951,7 +1951,7 @@ html::-webkit-scrollbar-thumb {
   align-items: center;
   border-radius: 0.6rem;
   margin: 15rem auto;
-  max-width: 45%;
+  max-width: 750px;
   padding: 2.5rem;
   background-color: #faece3;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
@@ -2082,6 +2082,40 @@ html::-webkit-scrollbar-thumb {
   font-size: 1rem;
   font-style: italic;
   color: #888888;
+}
+
+@media (max-width: 1280px) {
+  .sign-in-box {
+    max-width: 600px;
+  }
+
+  .sign-in-details {
+    width: 100%;
+  }
+
+  .registered-user-sign-in {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sign-in-box {
+    max-width: 500px;
+  }
+
+  .sign-in-title h2 {
+    padding-right: 1rem;
+  }
+
+  .sign-in-details {
+    width: 100%;
+  }
+
+  .registered-user-sign-in {
+    width: 100%;
+  }
+
+
 }
 
 /*create account box*/
