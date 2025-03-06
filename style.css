@@ -1967,6 +1967,7 @@ html::-webkit-scrollbar-thumb {
   margin-bottom: 1rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #c9c9c9;
+  white-space: nowrap;
 }
 
 .sign-in-title a {
@@ -2039,9 +2040,7 @@ html::-webkit-scrollbar-thumb {
 
 .remember-me {
   display: flex;
-  /* justify-content: center; */
-  align-items: top;
-  width: 1rem;
+  align-items: center;
   margin: 0;
   font-style: italic;
   margin-bottom: 2rem;
@@ -2089,6 +2088,10 @@ html::-webkit-scrollbar-thumb {
     max-width: 600px;
   }
 
+  .sign-in-title {
+    gap: 18rem;
+  }
+
   .sign-in-details {
     width: 100%;
   }
@@ -2103,8 +2106,8 @@ html::-webkit-scrollbar-thumb {
     max-width: 500px;
   }
 
-  .sign-in-title h2 {
-    padding-right: 1rem;
+  .sign-in-title {
+    gap: 14rem;
   }
 
   .sign-in-details {
