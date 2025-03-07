@@ -2620,6 +2620,7 @@ main.table {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .add-image-details {
@@ -2765,9 +2766,9 @@ main.table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 45rem;
   width: 85%;
-  margin: 2rem auto;
+  margin: 12rem auto;
+  margin-bottom: 0;
   color: #2c1106;
 }
 
@@ -2799,17 +2800,18 @@ main.table {
   align-items: center;
   background-color: #faece3;
   width: 85%;
-  margin: 2rem auto;
+  margin: 4rem auto;
+  margin-bottom: 10rem;
   border-radius: 0.6rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   /* gap: 30%; */
 }
 
 .account-tab .selected-tab {
-  width: 10rem;
+  width: 5rem;
   /* height: 3rem; */
-  padding: 0 1rem;
-  border-radius: 3rem;
+  /* padding: 0 1rem; */
+  border-radius: 2rem;
   background-color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
