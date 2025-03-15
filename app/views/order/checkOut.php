@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Check Out</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
+<?php require '../app/views/layouts/header.php';?>
 
 <!--shopping cart page-->
 <div class="cart-progress">
@@ -173,5 +166,4 @@
   </div>
 </div>
 
-</body>
-</html>
+<?php require '../app/views/layouts/header.php';?>

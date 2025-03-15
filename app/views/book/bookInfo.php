@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Book Info</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
+<?php require '../app/views/layouts/header.php';?>
 
 <!--cover image & breadcrumb column-->
 <div class="book-info-container">
@@ -297,5 +290,4 @@
   </div>
 </div>
 
-</body>
-</html>
+<?php require '../app/views/layouts/footer.php';?>

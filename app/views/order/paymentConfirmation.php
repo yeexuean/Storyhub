@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Payment Confirmation</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
+<?php require '../app/views/layouts/header.php';?>
 
 <div class="order-confirmation-page">
   <div class="tick-row">
@@ -118,5 +111,4 @@
   </div>
 </div>
 
-</body>
-</html>
+<?php require '../app/views/layouts/header.php';?>

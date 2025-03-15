@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
-
   <header class="header">
       <div class="header-1">
         <div class="section1">
@@ -48,5 +47,5 @@
         </div>
       </div>
     </header>
-  </body>
+</body>
 </head>

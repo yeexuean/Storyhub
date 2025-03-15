@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Profile</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
+<?php require '../app/views/layouts/header.php';?>
 
-<body>
 <div class="settings-header">
   <h3>Account Settings</h3>
   <div class="left-icon-box">
@@ -101,5 +95,5 @@
     </div>
   </div>
 </div>
-</body>
-</html>
+
+<?php require '../app/views/layouts/footer.php';?>

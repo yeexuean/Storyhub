@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Sign Up</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
+<?php require '../app/views/layouts/header.php';?>
 
 <!--sign up options-->
 <div class="create-account-box">
@@ -81,5 +74,4 @@
   </div>
 </div>
 
-</body>
-</html>
+<?php require '../app/views/layouts/footer.php';?>

@@ -2,20 +2,6 @@
   require '../app/views/layouts/header.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Story Hub</title>
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-  />
-</head>
-
-<body>
   <!-- body -->
   <div class="hero-container">
     <div class="trending-content">
@@ -470,8 +456,7 @@
       </div>
     </div>
   </div>
-</body>
-</head>
+
 
 <?php
   require '../app/views/layouts/footer.php';
