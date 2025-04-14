@@ -1,10 +1,10 @@
 # public/.htaccess
 RewriteEngine On
+RewriteBase /storyhub/
 
 # Serve existing files or directories directly
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 
 # Route all other requests to index.php
-RewriteRule ^ index.php [L]
+RewriteRule *(.*)$ public/index.php[L]
